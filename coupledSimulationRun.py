@@ -150,9 +150,9 @@ for line in setupFile:
 
 setupFile.close()
 
-name = fluidSpro.split(".")
+name = fluidSpro.split(".sp")
 fluidBaseName = name[0]
-name = solidSpro.split(".")
+name = solidSpro.split(".sp")
 solidBaseName = name[0]
 
 fluidSproCheck = check_open(fluidSpro,'r')
