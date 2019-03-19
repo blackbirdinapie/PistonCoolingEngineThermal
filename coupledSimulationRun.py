@@ -224,7 +224,10 @@ for i in xrange(0,numCycles):
     else:
         print ("Running Fluid Simulation")
         print (fluidRun)
-        os.system(fluidRun)
+        err=1
+        while (err!=0):            
+            err=os.system(fluidRun)
+            #print err
 
     solidFileName = "hflux_solid.txt"
     mapFluidToSolid (fluidSurfs,fluidBaseName,resultCorr,"_Average_heat_flux.txt",solidFileName)
