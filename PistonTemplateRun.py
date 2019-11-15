@@ -118,7 +118,7 @@ for line in setupFile:
     if words[0]=="simerics_path":
         words.pop(0)
         plString = " ".join(words)
-        simPath='"'+plString+'"'+" -run "
+        simPath=plString+" -run "
     if words[0]=="fluid_model":
         fluidSpro = (words[1])
     if words[0]=="solid_model":
